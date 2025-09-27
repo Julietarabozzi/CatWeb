@@ -31,27 +31,45 @@
   </div>
 
   <main>
-    <section id="gatitos">
+    <section id="gatitos" data-animate>
       <h2>Gatitos en adopción</h2>
       <p>Estos pequeños buscan un hogar lleno de amor. Todos merecen una segunda oportunidad</p>
 
-      <div class="gallery">
-        <a href="detail/chester.html" class="cat-card">
-          <img src="images/chester.png" alt="Chester">
-          <h3>Chester</h3>
-        </a>
-        <a href="detail/loki.html" class="cat-card">
-          <img src="images/loki.png" alt="Loki">
-          <h3>Loki</h3>
-        </a>
-        <a href="detail/cristal.html" class="cat-card">
-          <img src="images/cristal.png" alt="Cristal">
-          <h3>Cristal</h3>
-        </a>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button" type="button" data-carousel-prev aria-label="Ver animales anteriores">‹</button>
+        <div class="carousel-window">
+          <div class="carousel-track" data-animate>
+            <a href="detail/chester.html" class="cat-card">
+              <img src="images/chester.jpg" alt="Chester" loading="lazy">
+              <h3>Chester</h3>
+            </a>
+            <a href="detail/loki.html" class="cat-card">
+              <img src="images/loki.jpg" alt="Loki" loading="lazy">
+              <h3>Loki</h3>
+            </a>
+            <a href="detail/cristal.html" class="cat-card">
+              <img src="images/cristal.jpg" alt="Cristal" loading="lazy">
+              <h3>Cristal</h3>
+            </a>
+            <a href="detail/pancho.html" class="cat-card">
+              <img src="images/pancho.jpg" alt="Pancho" loading="lazy">
+              <h3>Pancho</h3>
+            </a>
+            <a href="detail/chocolate.html" class="cat-card">
+              <img src="images/chocolate.jpg" alt="Chocolate" loading="lazy">
+              <h3>Chocolate</h3>
+            </a>
+            <a href="detail/cachorros.html" class="cat-card">
+              <img src="images/joaqui_luckra.jpg" alt="Cazzu, Joaqui, Lali y Luck Ra" loading="lazy">
+              <h3>Bebés rescatados</h3>
+            </a>
+          </div>
+        </div>
+        <button class="carousel-button" type="button" data-carousel-next aria-label="Ver animales siguientes">›</button>
       </div>
     </section>
 
-    <section id="sobre" class="about-section">
+    <section id="sobre" class="about-section" data-animate>
       <h2>Sobre nosotros</h2>
       <p>
         En <strong>Cat Web</strong> tenemos un objetivo muy claro: encontrar hogares responsables, amorosos y llenos de mimo para gatitos que lo necesitan.
@@ -66,7 +84,7 @@
       </p>
     </section>
 
-    <section id="como-adoptar">
+    <section id="como-adoptar" data-animate>
       <h2>Cómo adoptar</h2>
       <p>
         Adoptar a través de Cat Web es un proceso pensado para encontrar el mejor hogar para cada felino.
@@ -93,12 +111,12 @@
         <li>Copia de DNI o documento vigente.</li>
         <li>Comprobante de domicilio (puede ser servicio o contrato).</li>
       </ul>
-      <div class="cta-container">
+      <div class="cta-container" data-animate>
         <a href="form/form.html" class="cta-button">Iniciar postulación</a>
       </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" data-animate>
       <h2>Contacto y preguntas frecuentes</h2>
       <p>Correo: <a href="mailto:contacto@catweb.org">contacto@catweb.org</a></p>
       <p>Horario de atención: Lunes a viernes de 10:00 a 18:00 (GMT-3).</p>
@@ -125,7 +143,7 @@
       <h3>¿Puedo pedir un gatito específico?</h3>
       <p>Podés postularte por un gatito puntual; evaluamos compatibilidad y opciones disponibles.</p>
 
-      <div class="cta-container">
+      <div class="cta-container" data-animate>
         <a href="form/form.html" class="cta-button">Ir al formulario</a>
       </div>
     </section>
@@ -139,5 +157,6 @@
     <a href="#contacto" class="footer-link">Contacto/FAQ</a>
   </p>
 </footer>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>
